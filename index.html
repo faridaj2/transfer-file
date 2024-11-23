@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>ShareIt - Transfer Files with Key Pin</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="peerjs.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <i class="fas fa-share-alt icon"></i>
+        <h1>ShareIt</h1>
+        <div>
+            <h3 class="label">Your Pin</h3>
+            <div id="your-pin">....</div>
+        </div>
+        <input type="file" id="fileInput" hidden />
+        <div id="drop-area">
+            <div class="drop-icon">
+                <i class="fa-light fa-file-upload"></i>
+            </div>
+            <div class="drop-text">Drag and drop files here</div>
+        </div>
+        <div id="dropped-content">
+            File disini
+        </div>
+        <input type="text" id="keyPin" placeholder="Enter Key Pin" />
+        <button onclick="transferFile()">Transfer File</button>
+        <div id="received-files">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

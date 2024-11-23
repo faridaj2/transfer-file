@@ -1,0 +1,113 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+#your-pin {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #007bff;
+  cursor: pointer;
+  border-radius: 5px;
+  letter-spacing: 5px;
+  font-size: 34px;
+  font-weight: 700;
+}
+.container h1,
+h3 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.container input[type="text"],
+.container input[type="file"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.container button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container button:hover {
+  background-color: #0056b3;
+}
+
+.container .icon {
+  font-size: 50px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Drop Area */
+
+#drop-area {
+  border: 2px dashed #aaa;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  min-height: 2in;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+#drop-area:hover {
+  background-color: rgb(245, 245, 245);
+}
+.drop-text {
+  font-size: 18px;
+  color: #888;
+}
+
+.drop-icon i {
+  color: #888;
+  font-size: 4.5rem;
+}
+
+#chars {
+  color: #888;
+  float: right;
+}
+#dropped-content {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #888;
+  border: 2px solid #888;
+  border-radius: 4px;
+  padding: 20px;
+}
+#received-files {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
