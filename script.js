@@ -25,7 +25,7 @@ const generatePin = () => {
 }
 
 const peer = new Peer(generatePin(), {
-    secure: false,
+    secure: true,
     debug: 2
 })
 
